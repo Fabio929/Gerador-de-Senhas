@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+    <script type="module" src="./src/js/index.js" defer></script>
+</head>
+<body>
+    <div class="app-body">
+        <div class="header-password">
+            <div class="main-btn">
+                <button id="copy-btn" class="btn-style"><img id="copy-icon" src="./src/styles/assets/clipboard.svg" alt="copy-password"></button>
+                <button id="generate-password" class="btn-style"><img  src="./src/styles/assets/arrow-counterclockwise.svg" alt="generate-password"></button>
+            </div>
+            <input type="text" id="password-generated" class="generated-password-style" placeholder="sua senha aparecerá aqui">
+        </div>
+        <div class="customize-password">
+            <h3>Personalize sua senha: </h3>
+            <div class="password-size">
+                <span class="size-info" id="size-info">15</span>
+                <input type="range" min="12" max="25" value="15" id="input-value" class="range">
+            </div>
+            <div class="allowed-chars">
+                <div class="number-char">
+                    <label for="numbers">Números</label>
+                    <input type="checkbox" name="char" id="char" value="1234567890">
+                    <label for="char" class="switch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="small-letters">
+                    <label for="letters">Letras minúsculas</label>
+                    <input type="checkbox" name="char" id="char" value="abcdefghijklmnopqrstuvwxyz">
+                </div>
+                <div class="symbols-char">
+                    <label for="symbols">Simbolos</label>
+                    <input type="checkbox" name="char" id="char" value="@#$%^&*%">
+                </div>
+                <div class="capital-letters">
+                    <label for="capital-letters">Letras maiúsculas</label>
+                    <input type="checkbox" name="char" id="char" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>

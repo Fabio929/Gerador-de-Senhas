@@ -1,0 +1,130 @@
+:root {
+    --bg-color:#585ADB;
+    --app-body-color: #fff;
+    --text-color: #807e7e;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Changa", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    height: 100vh;
+    width: auto;
+}
+
+.app-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--app-body-color);
+    border-radius: 8px;
+    padding: 20px auto;
+    height: 80vh;
+    width: 80vw;
+    
+}
+
+.header-password {
+    height: 3rem;
+    width: 39%;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    background-color: #d3d0d0bb;
+    border-radius: 6px;
+}
+
+.main-btn {
+    display: flex;
+    gap: 3px;
+    flex-wrap: nowrap;
+}
+.header-password input {
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.generated-password-style {
+    width: 80%;
+}
+
+.generated-password-style:focus {
+    outline: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.header-password button {
+    border: none;
+    padding: 5px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.customize-password {
+    height: 45%;
+    width: 39%;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: rgb(236, 230, 230);
+
+}
+
+.allowed-chars {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    margin: 15px 0px;
+    color: var(--text-color);
+
+}
+
+.number-char {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.customize-password h3 {
+    text-align: center;
+    margin: 20px 14px;
+    color: var(--text-color);
+    border-bottom: solid 2px #5c5b5b;
+}
+
+
+.password-size {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.password-size input {
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.size-info {
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+
+
